@@ -20,22 +20,25 @@ export function Hero() {
           className="space-y-8"
         >
           {/* Headline */}
-          <h2 
+          <h1 
             className="uppercase text-white tracking-[0.15em] leading-tight"
             style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: 500, lineHeight: 1.1, color: '#F5F5F0' }}
-          >
-            Exceptional Service
+            >
+            Exceptional Service 
             <br />
             For Exceptional Spaces
-          </h2>
+            {/* This tells Google exactly who you are and where you are */}
+            <span className="sr-only"> - Luxury Apartment and Residential Cleaning in Southern Westchester</span>
+          </h1>
 
           {/* Subheadline */}
           <p 
             className="max-w-2xl" 
             style={{ color: '#F5F5F0', fontSize: '1.125rem', fontWeight: 300, lineHeight: 1.8 }}
           >
-            Discreet, professional cleaning services tailored for luxury residences, 
-            premium properties, and discerning clientele.
+            Bespoke, white-glove apartment and residential cleaning for the most prestigious properties 
+            across Southern Westchester. Delivering discreet, meticulous service to discerning clients 
+            from Scarsdale and Bronxville to the Yonkers waterfront.
           </p>
 
           {/* CTA */}

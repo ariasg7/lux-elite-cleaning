@@ -5,12 +5,12 @@ import { useEffect, useState } from 'react';
 
 const services = [
   {
-    name: 'Residential Cleaning',
+    name: 'Luxury Residential',
     description: 'Comprehensive cleaning for luxury apartments and penthouses',
   },
   {
-    name: 'Property Management',
-    description: 'Turnover services for premium rental properties',
+    name: 'Premium Turnovers',
+    description: 'Cleaning for rental properties and high-end residences',
   },
   {
     name: 'Short-Term Rentals',
@@ -18,7 +18,7 @@ const services = [
   },
   {
     name: 'Move In/Move Out',
-    description: 'Deep cleaning for transitions and new beginnings',
+    description: 'Deep detailing for seamless transitions into your new Westchester home',
   },
 ];
 

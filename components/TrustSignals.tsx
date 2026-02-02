@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 const trustItems = [
-  'Insured & Bonded',
+  'White-Glove',
   'Professional Staff',
   'Luxury Residences',
   'Reliable Scheduling',
