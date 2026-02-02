@@ -36,7 +36,7 @@ export function FinalCTA() {
 
     try {
       // REPLACE THE URL BELOW WITH YOUR GOOGLE DEPLOYMENT URL
-      await fetch("https://script.google.com/macros/s/YOUR_ID_HERE/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbwSpOgVsIuEDnsIwUf7-N0hPd-4R6nqZlgumxQMjkSvJCDQeG1NsF3nZ6Wn6Aq0L3AAPQ/exec", {
         method: "POST",
         mode: "no-cors", 
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
