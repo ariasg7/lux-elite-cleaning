@@ -130,7 +130,7 @@ export function FinalCTA() {
           )}
 
           <div className="pt-12 space-y-4 border-t border-white/5 max-w-xs mx-auto">
-            <p className="text-white/50 text-[10px] tracking-widest uppercase">contact@luxelitecleaning.com</p>
+            <p className="text-white/50 text-[10px] tracking-widest uppercase">gianiarip2002@hotmail.com</p>
             <p className="text-white/50 text-[10px] tracking-widest uppercase">(212) 555-0100</p>
           </div>
         </motion.div>

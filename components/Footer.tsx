@@ -32,7 +32,7 @@ export function Footer() {
                 fontWeight: 300,
               }}
             >
-              contact@luxelitecleaning.com
+              gianiarip2002@hotmail.com
             </p>
             <p
               style={{
