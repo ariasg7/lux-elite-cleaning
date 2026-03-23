@@ -10,26 +10,26 @@ import {
 const comparisons = [
   {
     title: 'Marble Excellence',
-    before: '/img/before_after/marble_before.jpeg',
-    after: '/img/before_after/marble_after.jpeg',
+    before: '/img/before_after/marble_before.webp',
+    after: '/img/before_after/marble_after.webp',
     description: 'From dulled surface to diamond honed perfection',
   },
   {
     title: 'Polished Windows',
-    before: '/img/before_after/window_before.jpg',
-    after: '/img/before_after/window_after.jpg',
+    before: '/img/before_after/window_before.webp',
+    after: '/img/before_after/window_after.webp',
     description: 'Clouded panes restored to crystal-clear transparency.',
   },
   {
     title: 'Premium Textiles',
-    before: '/img/before_after/linen_before.jpeg',
-    after: '/img/before_after/linen_after.jpeg',
+    before: '/img/before_after/linen_before.webp',
+    after: '/img/before_after/linen_after.webp',
     description: 'Velvet and upholstery groomed to perfection',
   },
   {
     title: 'Countertop Detail',
-    before: '/img/before_after/counter_before.png',
-    after: '/img/before_after/counter_after.png',
+    before: '/img/before_after/counter_before.webp',
+    after: '/img/before_after/counter_after.webp',
     description: 'Surfaces that reflect our commitment to detail',
   },
 ];
