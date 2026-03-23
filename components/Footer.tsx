@@ -10,17 +10,15 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Logo */}
           <div>
-            <h3
-              className="uppercase tracking-[0.3em]"
-              style={{
-                color: '#F5F5F0',
-                fontSize: '0.875rem',
-                fontWeight: 300,
-                letterSpacing: '0.3em',
-              }}
-            >
-              Lux Elite Cleaning
-            </h3>
+              <img 
+                src="/img/Lux_Elite_Cleaning_White.png" // Replace with your actual logo path
+                alt="Lux Elite Cleaning"
+                className="h-[3rem] w-auto uppercase" // Uses the text size as the fixed height
+                style={{
+                  objectFit: 'contain', // Prevents distortion
+                  // Maintain tracking/letterSpacing if the image includes text spacing
+                  // letterSpacing: '0.3em', 
+                }}/>
           </div>
 
           {/* Contact info */}

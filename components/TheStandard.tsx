@@ -10,26 +10,26 @@ import {
 const comparisons = [
   {
     title: 'Marble Excellence',
-    before: 'https://images.unsplash.com/photo-1736506159814-25bcd056da22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=60&w=800',
-    after: 'https://images.unsplash.com/photo-1736506159814-25bcd056da22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    before: '/img/before_after/marble_before.jpeg',
+    after: '/img/before_after/marble_after.jpeg',
     description: 'From dulled surface to diamond honed perfection',
   },
   {
-    title: 'Polished Brass',
-    before: 'https://images.unsplash.com/photo-1663739314425-4b0d05a8a068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=60&w=800',
-    after: 'https://images.unsplash.com/photo-1663739314425-4b0d05a8a068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-    description: 'Tarnished fixtures restored to their original luster',
+    title: 'Polished Windows',
+    before: '/img/before_after/window_before.jpg',
+    after: '/img/before_after/window_after.jpg',
+    description: 'Clouded panes restored to crystal-clear transparency.',
   },
   {
     title: 'Premium Textiles',
-    before: 'https://images.unsplash.com/photo-1639654768139-9fd59f1a8417?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=60&w=800',
-    after: 'https://images.unsplash.com/photo-1639654768139-9fd59f1a8417?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    before: '/img/before_after/linen_before.jpeg',
+    after: '/img/before_after/linen_after.jpeg',
     description: 'Velvet and upholstery groomed to perfection',
   },
   {
     title: 'Countertop Detail',
-    before: 'https://images.unsplash.com/photo-1768039049614-f3c2bae3f1db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=60&w=800',
-    after: 'https://images.unsplash.com/photo-1768039049614-f3c2bae3f1db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    before: '/img/before_after/counter_before.png',
+    after: '/img/before_after/counter_after.png',
     description: 'Surfaces that reflect our commitment to detail',
   },
 ];
