@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import Image from 'next/image'; // Use Next.js Image for optimization
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
@@ -63,30 +64,13 @@ export function TheStandard() {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="text-center mb-20"
         >
-          <h2
-            className="uppercase tracking-[0.2em] mb-4"
-            style={{
-              color: '#000000',
-              fontSize: '0.875rem',
-              fontWeight: 500,
-              letterSpacing: '0.2em',
-            }}
-          >
+          <h2 className="uppercase tracking-[0.2em] mb-4 text-black text-sm font-medium">
             The Standard
           </h2>
-          <p
-            style={{
-              color: '#000000',
-              fontSize: '1.25rem',
-              fontWeight: 300,
-              lineHeight: 1.8,
-            }}
-          >
+          <p className="text-black text-xl font-light leading-relaxed">
             Details of Excellence
           </p>
-
-          {/* Gold divider */}
-          <div className="mx-auto mt-8" style={{ width: '80px', height: '0.5px', backgroundColor: '#D4AF37' }}></div>
+          <div className="mx-auto mt-8 w-20 h-[0.5px] bg-[#D4AF37]"></div>
         </motion.div>
 
         {/* Comparison Grid */}
@@ -103,85 +87,50 @@ export function TheStandard() {
               }}
               className="group"
             >
-              {/* Comparison Slider */}
               <div
-                className="relative overflow-hidden mb-6"
-                style={{
-                  border: '0.5px solid #D4AF37',
-                  aspectRatio: '4/3',
-                }}
+                className="relative overflow-hidden mb-6 border-[0.5px] border-[#D4AF37] aspect-[4/3]"
               >
-                <ReactCompareSlider
-                  itemOne={
-                    <ReactCompareSliderImage
-                      src={comparison.before}
-                      alt={`${comparison.title} - Before`}
-                      style={{
-                        objectFit: 'cover',
-                        filter: 'brightness(0.7) contrast(0.9)',
-                      }}
-                    />
-                  }
-                  itemTwo={
-                    <ReactCompareSliderImage
-                      src={comparison.after}
-                      alt={`${comparison.title} - After`}
-                      style={{ objectFit: 'cover' }}
-                    />
-                  }
-                  position={50}
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                  }}
-                  handle={
-                    <div
-                      style={{
-                        width: '2px',
-                        height: '100%',
-                        backgroundColor: '#D4AF37',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        position: 'relative',
-                      }}
-                    >
-                      <div
+                {/* CRITICAL FIX: Only render the slider when the section is visible.
+                   This prevents all 8 images from loading the moment the page starts.
+                */}
+                {isVisible && (
+                  <ReactCompareSlider
+                    itemOne={
+                      <ReactCompareSliderImage
+                        src={comparison.before}
+                        alt={`${comparison.title} - Before`}
                         style={{
-                          width: '32px',
-                          height: '32px',
-                          borderRadius: '50%',
-                          border: '2px solid #D4AF37',
-                          backgroundColor: '#000000',
-                          position: 'absolute',
+                          objectFit: 'cover',
+                          filter: 'brightness(0.7) contrast(0.9)',
                         }}
-                      ></div>
-                    </div>
-                  }
-                />
+                        // Lazy load the images that aren't first in view
+                        loading={index <= 1 ? "eager" : "lazy"} 
+                      />
+                    }
+                    itemTwo={
+                      <ReactCompareSliderImage
+                        src={comparison.after}
+                        alt={`${comparison.title} - After`}
+                        style={{ objectFit: 'cover' }}
+                        loading={index <= 1 ? "eager" : "lazy"}
+                      />
+                    }
+                    position={50}
+                    style={{ width: '100%', height: '100%' }}
+                    handle={
+                      <div className="w-[2px] h-full bg-[#D4AF37] flex items-center justify-center relative">
+                        <div className="w-8 h-8 rounded-full border-2 border-[#D4AF37] bg-black absolute"></div>
+                      </div>
+                    }
+                  />
+                )}
               </div>
 
-              {/* Title and Description */}
-              <div className="text-center">
-                <h3
-                  className="uppercase tracking-[0.15em] mb-3"
-                  style={{
-                    color: '#000000',
-                    fontSize: '0.875rem',
-                    fontWeight: 500,
-                    letterSpacing: '0.15em',
-                  }}
-                >
+              <div className="text-center text-black">
+                <h3 className="uppercase tracking-[0.15em] mb-3 text-sm font-medium">
                   {comparison.title}
                 </h3>
-                <p
-                  style={{
-                    color: '#000000',
-                    fontSize: '0.875rem',
-                    fontWeight: 300,
-                    lineHeight: 1.7,
-                  }}
-                >
+                <p className="text-sm font-light leading-relaxed">
                   {comparison.description}
                 </p>
               </div>
